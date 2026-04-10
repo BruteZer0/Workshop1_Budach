@@ -12,13 +12,13 @@ public class Calculator1 {
         System.out.println("Principal amount:");
 
         //Principal variable
-        double principal = scanner.nextFloat();
+        double principal = scanner.nextDouble();
 
         System.out.println("Principal amount is: $" + principal);
 
         System.out.println("Yearly interest rate:");
 
-        double interestRate = scanner.nextFloat();
+        double interestRate = scanner.nextDouble();
 
         System.out.println("Interest rate is: " + interestRate + "%");
 
@@ -30,7 +30,7 @@ public class Calculator1 {
 
         double monthlyInterest = (interestRate * .01) / 12;
 
-        double monthlyTerms = 12 * loanLength;
+        int monthlyTerms = 12 * loanLength;
 
         double monthlyInterestCalc = Math.pow(1 + monthlyInterest, monthlyTerms);
 
